@@ -1,0 +1,24 @@
+<html lang="en">
+	<meta charset="utf-8">
+	<script src="vue.min.js"></script>
+	<title>本地网页</title>
+	<body>
+		<div id="app">
+			hello world<br>
+			<img src="a.jpg">
+			
+			<button type="button" v-on:click="tan">弹出</button>
+		</div>
+		
+		<script type="text/javascript">
+			new Vue({
+				el : "#app",
+				methods : {
+					tan : function (){
+						alert("hello");
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
